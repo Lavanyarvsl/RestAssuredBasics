@@ -5,132 +5,200 @@ public class JsonStructure {
 	public static void main(String[] args) {
 	
 
-		String esnd=null;
-		esnd="ESND";
+		String ra=null;
+		ra="raw";
 		
 		
-		String val = "{\r\n" + "    \"ord\": {\r\n" + "        \"bussUnit\": \""+esnd+"\",\r\n"
-				+ "        \"srcOrdNo\": \"ORDESND\",\r\n" + "        \"custOrdNo\": \"CUSTESND10152019123459\",\r\n"
-				+ "        \"spltOrdNo\": \"9876543222\",\r\n" + "        \"ordNo\": \"\",\r\n"
-				+ "        \"tranDt\": \"2019-09-21T16:16:10\",\r\n" + "        \"ordDt\": \"2019-09-21T16:16:10\",\r\n"
-				+ "        \"ordTot\": \"999.99\",\r\n" + "        \"node\": \"085\",\r\n"
-				+ "        \"splsNode\": \"972\",\r\n" + "        \"scac\": \"ABCDEF\",\r\n"
-				+ "        \"scacCode\": \"GROUND\",\r\n" + "        \"hub\": \"3909\",\r\n"
-				+ "        \"zone\": \"UP\",\r\n" + "        \"logoId\": \"11111111\",\r\n"
-				+ "        \"shpLblId\": \"11111111\",\r\n" + "        \"snglLblReq\": \"N\",\r\n"
-				+ "        \"pckLstReq\": \"Y\",\r\n" + "        \"reqShpDt\": \"2019-10-21T16:16:10\",\r\n"
-				+ "        \"dlrRteTag\": \"11111\",\r\n" + "        \"dlrRte\": \"DLRRTE2345\",\r\n"
-				+ "        \"dlrRefTag\": \"11111\",\r\n" + "        \"dlrRef\": \"DLRREF12345\",\r\n"
-				+ "        \"dlrShrtRte\": \"DS001\",\r\n" + "        \"dlrMemoPO\": \"11vtl\",\r\n"
-				+ "        \"endConPOTag\": \"epo\",\r\n" + "        \"endConPONum\": \"POBrderBridge\",\r\n"
-				+ "        \"barCd1\": \"NJ001\",\r\n" + "        \"barCd2\": \"1001\",\r\n"
-				+ "        \"barCd3\": \"DSROUTE\",\r\n" + "        \"barCd4\": \"Department001\",\r\n"
-				+ "        \"ordLns\": {\r\n" + "            \"ordLn\": [\r\n" + "                {\r\n"
-				+ "                    \"lnNo\": \"000000001\",\r\n"
-				+ "                    \"rsrvId\": \"CUSTESND101520191234510\",\r\n"
-				+ "                    \"ordQty\": \"5\",\r\n" + "                    \"rsrvdQty\": \"\",\r\n"
-				+ "                    \"unitPrice\": \"9.99\",\r\n" + "                    \"lnPrice\": \"9.99\",\r\n"
-				+ "                    \"srlNoReq\": \"Y\",\r\n" + "                    \"lnTxts\": {\r\n"
-				+ "                        \"lnTxt\": [\r\n" + "                            {\r\n"
-				+ "                                \"seqNo\": \"1\",\r\n"
-				+ "                                \"lnTxtDesc\": \"this can have anything related to product of fields 81 characters\"\r\n"
-				+ "                            },\r\n" + "                            {\r\n"
-				+ "                                \"seqNo\": \"2\",\r\n"
-				+ "                                \"lnTxtDesc\": \"this can have anything related to product of fields 81 characters\"\r\n"
-				+ "                            }\r\n" + "                        ]\r\n" + "                    },\r\n"
-				+ "                    \"item\": {\r\n" + "                        \"custSKU\": \"CUSTSKU123\",\r\n"
-				+ "                        \"custUOM\": \"UM\",\r\n"
-				+ "                        \"srcSKU\": \"ESD-192609\",\r\n"
-				+ "                        \"srcUOM\": \"EA\",\r\n" + "                        \"splsSKU\": \"\",\r\n"
-				+ "                        \"splsUOM\": \"\",\r\n"
-				+ "                        \"skuDesc\": \"BINDER,DURIABLE,VW,5BK\",\r\n"
-				+ "                        \"hazmatInd\": \"Y\"\r\n" + "                    }\r\n"
-				+ "                }\r\n" + "            ]\r\n" + "        },\r\n" + "        \"insts\": {\r\n"
-				+ "            \"inst\": [\r\n" + "                {\r\n"
-				+ "                    \"type\": \"Dealer-Label\",\r\n"
-				+ "                    \"txt1\": \"DEALER INSTRUCTION LINE1\",\r\n"
-				+ "                    \"txt2\": \"DEALER INSTRUCTION LINE2\",\r\n"
-				+ "                    \"txt3\": \"DEALER INSTRUCTION LINE3\",\r\n"
-				+ "                    \"txt4\": \"DEALER INSTRUCTION LINE4\",\r\n"
-				+ "                    \"txt5\": \"DEALER INSTRUCTION LINE5\",\r\n"
-				+ "                    \"txt6\": \"DEALER INSTRUCTION LINE6\"\r\n" + "                },\r\n"
-				+ "                {\r\n" + "                    \"type\": \"Dealer-PackList\",\r\n"
-				+ "                    \"txt1\": \"Dealer-PackList INSTRUCTION LINE 1\",\r\n"
-				+ "                    \"txt2\": \"Dealer-PackList INSTRUCTION LINE 2\",\r\n"
-				+ "                    \"txt3\": \"Dealer-PackList INSTRUCTION LINE 3\",\r\n"
-				+ "                    \"txt4\": \"Dealer-PackList INSTRUCTION LINE 4\",\r\n"
-				+ "                    \"txt5\": \"Dealer-PackList INSTRUCTION LINE 5\",\r\n"
-				+ "                    \"txt6\": \"Dealer-PackList INSTRUCTION LINE 6\"\r\n" + "                },\r\n"
-				+ "                {\r\n" + "                    \"type\": \"Marketing-PackList\",\r\n"
-				+ "                    \"txt1\": \"Marketing-PackList INSTRUCTION LINE 1\",\r\n"
-				+ "                    \"txt2\": \"Marketing-PackList INSTRUCTION LINE 2\",\r\n"
-				+ "                    \"txt3\": \"Marketing-PackList INSTRUCTION LINE 3\",\r\n"
-				+ "                    \"txt4\": \"Marketing-PackList INSTRUCTION LINE 4\",\r\n"
-				+ "                    \"txt5\": \"Marketing-PackList INSTRUCTION LINE 5\",\r\n"
-				+ "                    \"txt6\": \"Marketing-PackList INSTRUCTION LINE 6\"\r\n"
-				+ "                },\r\n" + "                {\r\n"
-				+ "                    \"type\": \"Special-Label\",\r\n"
-				+ "                    \"txt1\": \"Special-Label INSTRUCTION LINE 1\",\r\n"
-				+ "                    \"txt2\": \"Special-Label INSTRUCTION LINE 2\",\r\n"
-				+ "                    \"txt3\": \"Special-Label INSTRUCTION LINE 3\",\r\n"
-				+ "                    \"txt4\": \"Special-Label INSTRUCTION LINE 4\",\r\n"
-				+ "                    \"txt5\": \"Special-Label INSTRUCTION LINE 5\",\r\n"
-				+ "                    \"txt6\": \"Special-Label INSTRUCTION LINE 6\"\r\n" + "                },\r\n"
-				+ "                {\r\n" + "                    \"type\": \"Special-PackList\",\r\n"
-				+ "                    \"txt1\": \"Special-PackList INSTRUCTION LINE 1\",\r\n"
-				+ "                    \"txt2\": \"Special-PackList INSTRUCTION LINE 2\",\r\n"
-				+ "                    \"txt3\": \"Special-PackList INSTRUCTION LINE 3\",\r\n"
-				+ "                    \"txt4\": \"Special-PackList INSTRUCTION LINE 4\",\r\n"
-				+ "                    \"txt5\": \"Special-PackList INSTRUCTION LINE 5\",\r\n"
-				+ "                    \"txt6\": \"Special-PackList INSTRUCTION LINE 6\"\r\n" + "                },\r\n"
-				+ "                {\r\n" + "                    \"type\": \"Return-PackList\",\r\n"
-				+ "                    \"txt1\": \"Return-PackList INSTRUCTION LINE 1\",\r\n"
-				+ "                                                                           \"txt2\": \"Return-PackList INSTRUCTION LINE 2\",\r\n"
-				+ "                                                                           \"txt3\": \"Return-PackList INSTRUCTION LINE 3\",\r\n"
-				+ "                                                                           \"txt4\": \"Return-PackList INSTRUCTION LINE 4\",\r\n"
-				+ "                                                                           \"txt5\": \"Return-PackList INSTRUCTION LINE 5\"\r\n"
-				+ "                },\r\n" + "                {\r\n"
-				+ "                    \"type\": \"Miscl-PackList\",\r\n"
-				+ "                                                                           \"txt1\": \"Miscl-PackList INSTRUCTION LINE 1\",\r\n"
-				+ "                                                                           \"txt2\": \"Miscl-PackList INSTRUCTION LINE 2\",\r\n"
-				+ "                                                                           \"txt3\": \"Miscl-PackList INSTRUCTION LINE 3\",\r\n"
-				+ "                                                                           \"txt4\": \"Miscl-PackList INSTRUCTION LINE 4\"\r\n"
-				+ "                },\r\n" + "                {\r\n"
-				+ "                    \"type\": \"Single-Label\",\r\n"
-				+ "                    \"txt1\": \"Single-Label INSTRUCTION LINE 1\",\r\n"
-				+ "                                                                           \"txt2\": \"Single-Label INSTRUCTION LINE 2\",\r\n"
-				+ "                                                                           \"txt3\": \"Single-Label INSTRUCTION LINE 3\",\r\n"
-				+ "                                                                           \"txt4\": \"Single-Label INSTRUCTION LINE 4\",\r\n"
-				+ "                                                                           \"txt5\": \"Single-Label INSTRUCTION LINE 5\",\r\n"
-				+ "                                                                           \"txt6\": \"Single-Label INSTRUCTION LINE 6\"\r\n"
-				+ "                }\r\n" + "            ]\r\n" + "        },\r\n" + "        \"addrLst\": {\r\n"
-				+ "            \"addr\": [\r\n" + "                {\r\n"
-				+ "                    \"type\": \"ShipTo\",\r\n"
-				+ "                    \"name\": \"HiTouch Best Office Products Comp\",\r\n"
-				+ "                    \"addLn1\": \"26 Boulder Run\",\r\n"
-				+ "                    \"addLn2\": \"1st Floor\",\r\n"
-				+ "                    \"city\": \"Oakland\",\r\n" + "                    \"state\": \"NJ\",\r\n"
-				+ "                    \"zip\": \"074362352\",\r\n" + "                    \"country\": \"US\"\r\n"
-				+ "                },\r\n" + "                {\r\n"
-				+ "               \"type\": \"ShipFrom-PackList\",\r\n"
-				+ "               \"name\": \"Essendand Edison Packlist\",\r\n"
-				+ "               \"addLn1\": \"60 Saw Mill Pond RD\",\r\n"
-				+ "               \"addLn2\": \"suite\",\r\n" + "               \"city\": \"Edison\",\r\n"
-				+ "               \"state\": \"NJ\",\r\n" + "               \"zip\": \"08817\",\r\n"
-				+ "               \"country\": \"US\"\r\n" + "            },\r\n" + "            {\r\n"
-				+ "               \"type\": \"ShipFrom-Label\",\r\n"
-				+ "               \"name\": \"Essendand Edison Label\",\r\n"
-				+ "               \"addLn1\": \"60 Saw Mill Pond RD\",\r\n"
-				+ "               \"addLn2\": \"suite\",\r\n" + "               \"city\": \"Edison\",\r\n"
-				+ "               \"state\": \"NJ\",\r\n" + "               \"zip\": \"08817\",\r\n"
-				+ "               \"country\": \"US\"\r\n" + "            },\r\n" + "            {\r\n"
-				+ "               \"type\": \"Return\",\r\n"
-				+ "               \"name\": \"Essendand Edison Return\",\r\n"
-				+ "               \"addLn1\": \"60 Saw Mill Pond RD\",\r\n"
-				+ "               \"addLn2\": \"suite\",\r\n" + "               \"city\": \"Edison\",\r\n"
-				+ "               \"state\": \"NJ\",\r\n" + "               \"zip\": \"08817\",\r\n"
-				+ "               \"country\": \"US\"\r\n" + "            }\r\n" + "            ]\r\n" + "        }\r\n"
-				+ "    }\r\n" + "}\r\n" + "";
+		String val = "{\r\n" + 
+				"    \"spa\": {\r\n" + 
+				"        \"SortAs\": \""+ra+"\",\r\n" + 
+				"        \"GlossTerm\": \"Slasdsd\",\r\n" + 
+				"        \"custOrdNo\": \"RTYU8787878787\",\r\n" + 
+				"        \"Acronym\": \"234234234234\",\r\n" + 
+				"        \"ordNo\": \"\",\r\n" + 
+				"        \"tranDt\": \"2019-09-21T16:16:10\",\r\n" + 
+				"        \"ordDt\": \"2019-09-21T16:16:10\",\r\n" + 
+				"        \"ordTot\": \"999.99\",\r\n" + 
+				"        \"Abbrev\": \"085\",\r\n" + 
+				"        \"splsNode\": \"972\",\r\n" + 
+				"        \"scac\": \"ABCDEF\",\r\n" + 
+				"        \"scacCode\": \"SNHYT\",\r\n" + 
+				"        \"hub\": \"3909\",\r\n" + 
+				"        \"zone\": \"UP\",\r\n" + 
+				"        \"logoId\": \"11111111\",\r\n" + 
+				"        \"GlossDef\": \"11111111\",\r\n" + 
+				"        \"snglLblReq\": \"N\",\r\n" + 
+				"        \"question\": \"Y\",\r\n" + 
+				"        \"options\": \"2019-10-21T16:16:10\",\r\n" + 
+				"        \"sport\": \"11111\",\r\n" + 
+				"        \"swal\": \"DLRRTE2345\",\r\n" + 
+				"        \"Bulls\": \"11111\",\r\n" + 
+				"        \"batters\": \"SQ\",\r\n" + 
+				"        \"picture\": \"MS001343434\",\r\n" + 
+				"        \"eyeColor\": \"11vtl\",\r\n" + 
+				"        \"remo\": \"spoc\",\r\n" + 
+				"        \"valgo\": \"POJtrtrtr\",\r\n" + 
+				"        \"swanta\": \"BTRTR6565\",\r\n" + 
+				"        \"tamalka\": \"10008881\",\r\n" + 
+				"        \"smeard\": \"ERTU788787\",\r\n" + 
+				"        \"blaco\": \"Dep001\",\r\n" + 
+				"        \"items\": {\r\n" + 
+				"            \"item\": [\r\n" + 
+				"                {\r\n" + 
+				"                    \"slnNo\": \"000000001\",\r\n" + 
+				"                    \"qeqweqwe\": \"YTYYYYY67767eewrwe98\",\r\n" + 
+				"                    \"itmQty\": \"5\",\r\n" + 
+				"                    \"swrter\": \"\",\r\n" + 
+				"                    \"unitPrice\": \"9.99\",\r\n" + 
+				"                    \"bulkPrice\": \"9.99\",\r\n" + 
+				"                    \"srlNoReq\": \"Y\",\r\n" + 
+				"                    \"taxes\": {\r\n" + 
+				"                        \"tax\": [\r\n" + 
+				"                            {\r\n" + 
+				"                                \"itemseqNo\": \"1\",\r\n" + 
+				"                                \"Desc\": \"this can have anything related to item of fields 81 characters\"\r\n" + 
+				"                            },\r\n" + 
+				"                            {\r\n" + 
+				"                                \"itemseqNo\": \"2\",\r\n" + 
+				"                                \"itemDesc\": \"this can have anything related to item of fields 81 characters\"\r\n" + 
+				"                            }\r\n" + 
+				"                        ]\r\n" + 
+				"                    },\r\n" + 
+				"                    \"item\": {\r\n" + 
+				"                        \"stockUnit\": \"YYYYRRRR\",\r\n" + 
+				"                        \"stockUOM\": \"TM\",\r\n" + 
+				"                        \"srcETY\": \"RETET34535435\",\r\n" + 
+				"                        \"srcTUU\": \"Los Angeles Kings\",\r\n" + 
+				"                        \"spls\": \"\",\r\n" + 
+				"                        \"splsUOM\": \"\",\r\n" + 
+				"                        \"skuDesc\": \"Los Angeles Kings\",\r\n" + 
+				"                        \"hazmatInd\": \"TR\"\r\n" + 
+				"                    }\r\n" + 
+				"                }\r\n" + 
+				"            ]\r\n" + 
+				"        },\r\n" + 
+				"        \"insts\": {\r\n" + 
+				"            \"inst\": [\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 1\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 2\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 3\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 4\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 5\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 6\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 7\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"                    \"transactiontype 8\": \"Bank Acc\",\r\n" + 
+				"                    \"label1\": \"Which one is correct team name 1\",\r\n" + 
+				"                    \"label2\": \"Which one is correct team name 2\",\r\n" + 
+				"                    \"label3\": \"Which one is correct team name 3\",\r\n" + 
+				"                    \"label4\": \"Which one is correct team name 4\",\r\n" + 
+				"                    \"label5\": \"Which one is correct team name 5\",\r\n" + 
+				"                    \"label6\": \"Which one is correct team name 6\"\r\n" + 
+				"                }\r\n" + 
+				"            ]\r\n" + 
+				"        },\r\n" + 
+				"        \"addrLst\": {\r\n" + 
+				"            \"addr\": [\r\n" + 
+				"                {\r\n" + 
+				"                    \"country\": \"New York Bulls\",\r\n" + 
+				"                    \"name\": \"Los Angeles Kings\",\r\n" + 
+				"                    \"addLn1\": \"26 Street\",\r\n" + 
+				"                    \"addLn2\": \"Golden State Warriros\",\r\n" + 
+				"                    \"city\": \"Huston Rocket\",\r\n" + 
+				"                    \"state\": \"RNJ\",\r\n" + 
+				"                    \"zip\": \"3435435435\",\r\n" + 
+				"                    \"country\": \"India\"\r\n" + 
+				"                },\r\n" + 
+				"                {\r\n" + 
+				"               \"zone\": \"126\",\r\n" + 
+				"               \"name\": \"Berkshire Hathaway\",\r\n" + 
+				"               \"addLn1\": \"Huston Rocket\",\r\n" + 
+				"               \"addLn2\": \"Blako\",\r\n" + 
+				"               \"city\": \"Bgrl\",\r\n" + 
+				"               \"state\": \"NJ\",\r\n" + 
+				"               \"zip\": \"34324324\",\r\n" + 
+				"               \"country\": \"US\"\r\n" + 
+				"            },\r\n" + 
+				"            {\r\n" + 
+				"               \"zone\": \"12642234\",\r\n" + 
+				"               \"name\": \"Berkshire Hathaway\",\r\n" + 
+				"               \"addLn1\": \"Huston Rocket\",\r\n" + 
+				"               \"addLn2\": \"Bloack\",\r\n" + 
+				"               \"city\": \"Bgrl\",\r\n" + 
+				"               \"state\": \"NJ\",\r\n" + 
+				"               \"zip\": \"324234\",\r\n" + 
+				"               \"country\": \"US\"\r\n" + 
+				"            },\r\n" + 
+				"            {\r\n" + 
+				"               \"zone\": \"43242424\",\r\n" + 
+				"               \"name\": \"Berkshire Hathaway\",\r\n" + 
+				"               \"addLn1\": \"Huston Rocket\",\r\n" + 
+				"               \"addLn2\": \"Saw Rock\",\r\n" + 
+				"               \"city\": \"Bgrl\",\r\n" + 
+				"               \"state\": \"KHJ\",\r\n" + 
+				"               \"zip\": \"08899894517\",\r\n" + 
+				"               \"country\": \"US\"\r\n" + 
+				"            }\r\n" + 
+				"            ]\r\n" + 
+				"        }\r\n" + 
+				"    }\r\n" + 
+				"}\r\n" + 
+				"";
 		
 		
 		

@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.log4j.BasicConfigurator;
 
@@ -19,8 +23,13 @@ public class SampleJsonFromFile {
 	
 	/*https://github.com/json-path/JsonPath
 */	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		
+		LibFunction lib=new LibFunction();
 		String yourActualJSONString = null;
 		
 		BasicConfigurator.configure();
@@ -36,17 +45,25 @@ public class SampleJsonFromFile {
 			e.printStackTrace();
 		}
 		
-		System.out.println("yourActualJSONString::"+yourActualJSONString);
+		//System.out.println("yourActualJSONString::"+yourActualJSONString);
 		
-		
+		Map<String, String> map = new HashMap<String, String>();
+	    map.put("$.spa.SortAs", "TRTR");
+	    map.put("$.spa.GlossTerm", "TRTR");
+	    map.put("$.spa.Acronym", "TRTR");
+	    map.put("$.spa.items.item[0].slnNo", "TRTR");
+	    
+	    
+	   // List<String> val=
 
-			ObjectNode newJson=JsonPath.using(config).parse(yourActualJSONString).set("$.ord.bussUnit","abcd").json();
-			System.out.println("Value::"+newJson.toString());
+			//ObjectNode newJson=JsonPath.using(config).parse(yourActualJSONString).set("$.spa.SortAs","abcd").json();
+			//System.out.println("Value::"+newJson.toString());
+		String va = lib.setValueToJsonNode(yourActualJSONString, map);
 		
+		System.out.println("My Final Value::"+va);
 		
-		
-		
-
 	}
 
+
+	
 }
